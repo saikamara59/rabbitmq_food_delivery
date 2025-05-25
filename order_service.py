@@ -13,7 +13,10 @@ channel.exchange_declare(exchange="orders", exchange_type="fanout")
 # Simulate placing an order
 order = {
     "order_id": str(uuid.uuid4())[:8],
-    "item": "Pepperoni Pizza",
+    "item": "Bed Stuy Fish Fry",
+    "size": "large",
+    "toppings": ["pepperoni", "mushrooms", "extra cheese"],
+    "address": "123 Main St, Brooklyn, NY",
     "quantity": 2
 }
 
