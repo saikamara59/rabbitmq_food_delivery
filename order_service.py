@@ -26,3 +26,4 @@ channel.basic_publish(
 
 print(f"🍕 Sent order: {order}")
 connection.close()
+# testing purposes 
