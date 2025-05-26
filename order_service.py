@@ -13,11 +13,15 @@ channel.exchange_declare(exchange="orders", exchange_type="fanout")
 # Simulate placing an order
 order = {
     "order_id": str(uuid.uuid4())[:8],
-    "item": "Bed Stuy Fish Fry",
+    "item": "Handmade Pizza",
+    "crust": "thin",
+    "sauce": "tomato",
+    "cheese": "mozzarella",
     "size": "large",
     "toppings": ["pepperoni", "mushrooms", "extra cheese"],
     "address": "123 Main St, Brooklyn, NY",
-    "quantity": 2
+    "quantity": 5,
+    "order_status": "pending"
 }
 
 # Publish order to exchange
