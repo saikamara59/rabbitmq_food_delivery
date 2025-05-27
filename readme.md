@@ -1,5 +1,5 @@
 ## RABBITMQ FOOD Delivery Microservices Demo
-this project is small simple food delivery system using Python microservices and RabbitMQ for messaging. Each servcie communicates via RabbitMQ simulating a real life order workflow
+this project is small simple food delivery system using Python microservices and RabbitMQ for messaging. Each service communicates via RabbitMQ simulating a real life order workflow
 
 ## Services
 
