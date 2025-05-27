@@ -3,10 +3,10 @@ this project is small simple food delivery system using Python microservices and
 
 ## Services
 
--**order_services.py**: Places a new food order and publishes it to RabbitMQ.
--**kitchen_service.py**: Listens for new orders, updates the order status to "preparing".
+- **order_services.py**: Places a new food order and publishes it to RabbitMQ.
+- **kitchen_service.py**: Listens for new orders, updates the order status to "preparing".
 - **delivery_service.py**: Listens for orders and simulates the delivery process.
--**confirmation_service.py**: Listens for orders and prints a confirmation.
+- **confirmation_service.py**: Listens for orders and prints a confirmation.
 
 ## Architecture
 All services communicate using a RabbitMq **fanout exchange** called 'orders'. Each service creates its own temporary queue and receives all published orders.
