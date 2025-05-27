@@ -51,6 +51,7 @@ sudo systemctl status rabbitmq-server
     ```
 
 3. **In a seperate terminal, place an order:**
+
     ```sh
     python3 order_service.py
     ```
