@@ -43,12 +43,14 @@ sudo systemctl status rabbitmq-server
 ## Running the Project
 1. Start RabbitMQ server (see above)
 2. Open a terminal for each service and run:
+
   ```sh
     python3 kitchen_service.py
     python3 delivery_service.py
     python3 confirmation_service.py  # if you have it
     ```
-3. ** In a seperate terminal, place an order:**
+
+3. **In a seperate terminal, place an order:**
     ```sh
     python3 order_service.py
     ```
