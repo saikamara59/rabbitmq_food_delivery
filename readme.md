@@ -1,8 +1,9 @@
 ## RABBITMQ FOOD Delivery Microservices Demo
 this project is small simple food delivery system using Python microservices and RabbitMQ for messaging. Each servcie communicates via RabbitMQ simulating a real life order workflow
 
-##Services 
--** order_services.py**: Places a new food order and publishes it to RabbitMQ.
+## Services
+
+-**order_services.py**: Places a new food order and publishes it to RabbitMQ.
 -**kitchen_service.py**: Listens for new orders, updates the order status to "preparing".
 - **delivery_service.py**: Listens for orders and simulates the delivery process.
 -**confirmation_service.py**: Listens for orders and prints a confirmation.
